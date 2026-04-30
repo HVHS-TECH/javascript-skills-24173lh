@@ -1,1 +1,45 @@
-/* Paste your code from task 3, Maths here */
+/****************************
+Name of task
+****************************/
+console.log("Running t01_introduction.js")
+console.log("67")
+
+// variables
+var user = "Leo";
+var age = 15;
+var money = 0;
+var year  = 2026;
+var answer;
+var no1 = 10;
+var no2 = 2;
+const OUTPUT = document.getElementById("JavaScriptOutput");
+
+OUTPUT.innerHTML = "<h2>Added by JavaScript. </h2>"
+
+OUTPUT.innerHTML += "<br>My name is " + user
+OUTPUT.innerHTML += ". <br>As of " + year + ", I am " + age
+OUTPUT.innerHTML += ". <br>I have " + money + " dollars"
+answer = no1 + no2;
+OUTPUT.innerHTML += ". <br><br>Add - " + answer
+answer = no1 - no2;
+OUTPUT.innerHTML += ". <br>Subtract - " + answer
+answer = no1 * no2;
+OUTPUT.innerHTML += ". <br>Multiply - " + answer
+answer = no1 / no2;
+OUTPUT.innerHTML += ". <br>Divide - " + answer
+var born = year - age;
+OUTPUT.innerHTML += ". <br><br>You were born in " + born
+money = money + answer
+OUTPUT.innerHTML += ". <br>I now have " + money + " dollars."
+var later = age + 10;
+OUTPUT.innerHTML += "<br>In 10 years I will be " + later + "."
+
+
+
+
+
+
+
+/****************************
+functions
+****************************/
