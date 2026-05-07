@@ -47,13 +47,18 @@ function displayProduct(_name, _price){
     OUTPUT.innerHTML += "<br>" + _name + ": " + _price
 }
 
+function getUserName(){
+const NAME_FIELD = document.getElementById("nameField");
+let userName = NAME_FIELD.value;
+OUTPUT.innerHTML += "<br><br>Your name is " + userName + "<br><br>"
+}
+
 
 welcome()
 displayProduct("Chocolate bar", "$4")
 displayProduct("Chips", "$3")
 displayProduct("Drink", "$2.50")
-
-const NAME_FIELD = document.getElementById("nameField");
-let userName = NAME_FIELD.value;
+getUserName()
 
 }
+
