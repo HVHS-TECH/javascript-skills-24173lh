@@ -1,7 +1,7 @@
 /****************************
 Name of task
 ****************************/
-console.log("Running t11_data_types.js")
+console.log("Running t12_conditionals.js")
 console.log("67")
 
 // variables
@@ -59,5 +59,9 @@ const MONEY_FIELD = document.getElementById("moneyField");
 let userMoney = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<br><br>You are " + userAge + "<br><br>"
 OUTPUT.innerHTML += "<br><br>You have $" + (0 + userMoney) + "<br><br>"
-
+if (userMoney < 4){
+   OUTPUT.innerHTML += "<br><br>Sorry you CAN'T afford a chocolate bar."
+} else{
+    OUTPUT.innerHTML += "<br><br>You CAN afford a chocolate bar.<br><br>"
+}
 }
