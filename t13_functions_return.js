@@ -63,6 +63,7 @@ const MONEY_FIELD = document.getElementById("moneyField");
 let userMoney = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<br><br>You are " + userAge + "<br><br>"
 OUTPUT.innerHTML += "<br><br>You have $" + (0 + userMoney) + "<br><br>"
+
 if (userMoney < 4){
    OUTPUT.innerHTML += "<br><br>Sorry you CAN'T afford a chocolate bar."
 } else{

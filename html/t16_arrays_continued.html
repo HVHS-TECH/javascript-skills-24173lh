@@ -16,7 +16,7 @@
 **************************************************************-->
 
 <body>
-  <h1>T16-arrays continued</h1>
+  <h1>T16-arrays_continued</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
     <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
@@ -48,16 +48,22 @@
  <form onsubmit="return false;">
   <label for="userBeer">How many bottles of beer? (1-99)</label>
   <input type="number" id="beerField" name="userBeer" placeholder="1-99">
-  <input type="submit" onClick=getFormInput();>
+  <input type="submit" onClick=getFormInput()>
   </form>
 
     <br>
 
- <form onsubmit="return false;">
-  <label for="userShopping">What do you want to add? (1-99)</label>
-  <input type="number" id="beerField" name="userBeer" placeholder="1-99">
-  <input type="submit" onClick=getFormInput();>
-  </form>
+ 
+
+<form onsubmit="return false;">
+  <label for="userShopping">What do you want to add to the shopping list?</label>
+  <input type="text" id="shoppingField" name="userShopping" placeholder="Food/Drink">
+  <input type="submit" value="Add" onclick="
+  addShopping();
+  document.getElementById('shoppingOutput').innerHTML = 'You have added ' + document.getElementById('shoppingField').value">
+</form>
+
+<p id="shoppingOutput"></p>
 
 
    <br><br><br>

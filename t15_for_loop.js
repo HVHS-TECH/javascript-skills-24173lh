@@ -81,8 +81,9 @@ OUTPUT.innerHTML += "<br><br>You want " + userBeer + " bottles of beer. <br><br>
 
 for (let count = userBeer; count >= 2; count--){
 OUTPUT.innerHTML += "<br>" + count + " bottles of beer on the wall, " + count + " bottles of beer. <br><br>Take one down and pass it around, "
-
 }
+
+
 OUTPUT.innerHTML += "<br>1 bottle of beer on the wall, 1 bottle of beer.<br><br>"
 
 

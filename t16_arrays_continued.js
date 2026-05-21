@@ -16,7 +16,19 @@ const OUTPUT = document.getElementById("JavaScriptOutput");
 
 OUTPUT.innerHTML = "<h2>Added by JavaScript. </h2>"
 
-function start(){
+
+const SHOPPING_FIELD = document.getElementById("shoppingField");
+let userShopping = (SHOPPING_FIELD.value);
+
+let shoppingList = ["Chocolate", "Milk", "Chips"] 
+function addShopping(){
+    let userShopping = SHOPPING_FIELD.value;
+    shoppingList.push(userShopping); 
+}
+
+
+
+    function start(){
 
 OUTPUT.innerHTML += "<br>My name is " + user
 OUTPUT.innerHTML += ". <br>As of " + year + ", I am " + age
@@ -52,7 +64,9 @@ function calculateChange(_money, _price){
     OUTPUT.innerHTML += "<br><br>You have $" + change + " change.<br><br>"
 }
 
+
 let opinionChocolate = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"]
+
 
 welcome()
 displayProduct("Chocolate bar", "$4")
@@ -67,6 +81,9 @@ const CHOCOLATE_FIELD = document.getElementById("chocolateField");
 let userChocolate = Number(CHOCOLATE_FIELD.value);
 const BEER_FIELD = document.getElementById("beerField");
 let userBeer = Number(BEER_FIELD.value);
+
+
+
 OUTPUT.innerHTML += "<br><br>You are " + userAge + "<br><br>"
 OUTPUT.innerHTML += "<br><br>You have $" + (0 + userMoney) + "<br><br>"
 if (userMoney < 4){
@@ -85,5 +102,10 @@ OUTPUT.innerHTML += "<br>" + count + " bottles of beer on the wall, " + count + 
 }
 OUTPUT.innerHTML += "<br>1 bottle of beer on the wall, 1 bottle of beer.<br><br>"
 
+
+OUTPUT.innerHTML += "<br>Shopping List:<br><br>"
+for(let i=0; i<shoppingList.length; i++){
+OUTPUT.innerHTML += shoppingList[i] + "<br>"
+}
 
 }
